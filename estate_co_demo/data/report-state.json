@@ -1,0 +1,8 @@
+{
+  "delivered": {
+    "email": { "leads": [], "enquiries": [] },
+    "whatsapp": { "leads": [], "enquiries": [] }
+  },
+  "whatsappFileSentDates": { "leads": [], "enquiries": [] },
+  "lastRunAt": null
+}
