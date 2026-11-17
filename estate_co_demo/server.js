@@ -5,6 +5,9 @@ const path = require('path');
 const cron = require('node-cron');
 const { runDailyReport } = require('./services/dailyReports');
 
+const cors = require("cors");
+app.use(cors());
+
 const app = express();
 const root = __dirname;
 const port = process.env.PORT || 3000;
