@@ -5,9 +5,6 @@ const path = require('path');
 const cron = require('node-cron');
 const { runDailyReport } = require('./services/dailyReports');
 
-const cors = require("cors");
-app.use(cors());
-
 const app = express();
 const root = __dirname;
 const port = process.env.PORT || 3000;
@@ -39,6 +36,9 @@ function save(file, obj) {
 
 const clean = (value, max = 500) => typeof value === 'string' ? value.trim().slice(0, max) : '';
 const phoneOK = value => /^[6-9]\d{9}$/.test(value);
+
+const cors = require("cors");
+app.use(cors());
 
 app.post('/api/brochure', (req, res) => {
   const name = clean(req.body.name, 100);
