@@ -1,5 +1,5 @@
 // ⚠️ REPLACE THIS with your actual Render URL (no trailing slash)
-const BACKEND_URL = "https://onrender.com";
+const BACKEND_URL = "https://area-502e.onrender.com";
 
 document.querySelectorAll(".year").forEach(x => x.textContent = new Date().getFullYear());
 const menu = document.querySelector(".hamb"), nav = document.querySelector("nav");
